@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\DEV\\Fiap-Cloud-Games-FCG\\FIAP-Cloud-Games-POSTECH\\FCG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\dev\\fiap-cloud-games-fcg\\fiap-cloud-games-postech\\fcg\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\dev\\fiap-cloud-games-fcg\\fiap-cloud-games-postech\\fcg\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\dev\\fiap-cloud-games-fcg\\fiap-cloud-games-postech\\fcg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\dev\\fiap-cloud-games-fcg\\fiap-cloud-games-postech\\fcg\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\DEV\\Fiap-Cloud-Games-FCG\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\DEV\\Fiap-Cloud-Games-FCG\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\DEV\\Fiap-Cloud-Games-FCG\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\DEV\\Fiap-Cloud-Games-FCG\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T01:50:47.602Z",
+              "WhenOpened": "2025-05-20T00:00:40.098Z",
               "EditorCaption": ""
             },
             {
@@ -41,9 +45,22 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\DEV\\Fiap-Cloud-Games-FCG\\FIAP-Cloud-Games-POSTECH\\FCG\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T01:43:36.079Z",
+              "WhenOpened": "2025-05-19T23:58:29.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\DEV\\Fiap-Cloud-Games-FCG\\FIAP-Cloud-Games-POSTECH\\FCG\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\DEV\\Fiap-Cloud-Games-FCG\\FIAP-Cloud-Games-POSTECH\\FCG\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T23:57:25.494Z",
               "EditorCaption": ""
             }
           ]
