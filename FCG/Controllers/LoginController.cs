@@ -52,11 +52,29 @@ namespace FCG.Controllers
             }
         }
 
-        [HttpPost("registrar")]
-        public async Task<IActionResult> Registrar([FromBody] Usuario novoUsuario)
+        //[HttpPost("registrar")]
+        ////public async Task<IActionResult> Registrar([FromBody] Usuario novoUsuario)
+        //public Task<IActionResult> Registrar([FromBody] Usuario novoUsuario)
+        //{
+        //    //await _usuarioRepository.CreateUsuarioAsync(novoUsuario);
+        //    //return Ok(new { mensagem = "Usuário criado com sucesso" });
+        //}
+
+        private static List<Usuario> usuarios = new List<Usuario>();
+
+        [HttpPost("register")]
+        public IActionResult Cadastrar([FromBody] Usuario usuario)
         {
-            await _usuarioRepository.CreateUsuarioAsync(novoUsuario);
-            return Ok(new { mensagem = "Usuário criado com sucesso" });
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            // Verifica se já existe usuário com o mesmo e-mail
+            if (usuarios.Any(u => u.Email == usuario.Email))
+                return Conflict(new { mensagem = "E-mail já cadastrado" });
+
+            usuarios.Add(usuario);
+
+            return Ok(new { mensagem = "Usuário cadastrado com sucesso!" });
         }
     }
 }
