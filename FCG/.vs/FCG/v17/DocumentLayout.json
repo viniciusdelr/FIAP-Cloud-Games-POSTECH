@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\fcg.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:fcg.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\migrations\\20250601041207_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:migrations\\20250601041207_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B288FE-B67E-4E7F-B1D4-79E862772692}|FCG.csproj|solutionrelative:controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,104 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20250601041207_Initial.cs",
-              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Migrations\\20250601041207_Initial.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250601041207_Initial.cs",
-              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Migrations\\20250601041207_Initial.cs",
-              "RelativeToolTip": "Migrations\\20250601041207_Initial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T04:12:07.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FCG.csproj",
-              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\FCG.csproj",
-              "RelativeDocumentMoniker": "FCG.csproj",
-              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\FCG.csproj",
-              "RelativeToolTip": "FCG.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-01T04:01:43.183Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-01T03:44:18.116Z",
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "Controllers\\RegisterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T05:56:23.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Entities\\Users.cs",
-              "RelativeDocumentMoniker": "Entities\\Users.cs",
-              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Entities\\Users.cs",
-              "RelativeToolTip": "Entities\\Users.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T03:13:15.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "Data\\DataContext.cs",
-              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Data\\DataContext.cs",
-              "RelativeToolTip": "Data\\DataContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T03:00:53.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
               "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowAwAAAA+AAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAswE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T00:00:40.098Z"
+              "WhenOpened": "2025-06-01T05:37:21.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACEAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ValuesController.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "Controllers\\ValuesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T23:58:29.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T23:57:25.494Z"
+              "WhenOpened": "2025-06-01T05:37:16.04Z",
+              "EditorCaption": ""
             }
           ]
         }
