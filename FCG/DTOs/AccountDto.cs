@@ -1,6 +1,6 @@
 ﻿namespace FCG.DTOs
 {
-    public class RegisterDto
+    public class AccountDto
     {
         public required string Username { get; set; }
         public required string FirstName { get; set; }

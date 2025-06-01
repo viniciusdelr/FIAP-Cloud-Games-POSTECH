@@ -7,16 +7,16 @@ using FCG.DTOs;
 
 namespace FCG.Controllers
 {
-    public class RegisterController : Controller
+    public class AccountController : Controller
     {
         private readonly DataContext _context;
-        public RegisterController(DataContext context)
+        public AccountController(DataContext context)
         {
             _context = context;
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult> Register(RegisterDto dto)
+        public async Task<ActionResult> Register(AccountDto dto)
         {
             if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
                 return BadRequest(new { mensagem = "E-mail já cadastrado." });
@@ -30,13 +30,15 @@ namespace FCG.Controllers
             if (!Regex.IsMatch(dto.Password, @"^(?=.*[a-zA-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$"))
                 return BadRequest(new { mensagem = "A senha deve ter no mínimo 8 caracteres, incluindo letras, números e caracteres especiais." });
 
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+
             var user = new Users
             {
                 Username = dto.Username,
                 FirstName = dto.FirstName,
                 LastName = dto.LastName,
                 Email = dto.Email,
-                Password = dto.Password,
+                Password = hashedPassword,
                 Admin = false
             };
 
