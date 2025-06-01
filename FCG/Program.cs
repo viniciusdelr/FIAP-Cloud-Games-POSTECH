@@ -1,5 +1,7 @@
+using FCG.Data;
 using JWT_Example;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -40,6 +42,11 @@ builder.Services.AddScoped<FCG.Repositories.UsuarioRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 var app = builder.Build();
 
