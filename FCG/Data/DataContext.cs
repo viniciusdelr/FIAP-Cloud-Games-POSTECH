@@ -11,5 +11,6 @@ namespace FCG.Data
         }
 
         public DbSet<Users> Users { get; set; }
+        public DbSet<VideoGames> VideoGames { get; set; }
     }
 }
