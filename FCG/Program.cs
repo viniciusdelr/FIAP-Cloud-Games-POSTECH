@@ -37,9 +37,6 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization();
 
-builder.Services.AddSingleton<FCG.Connection.MongoDBContext>();
-builder.Services.AddScoped<FCG.Repositories.UsuarioRepository>();
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

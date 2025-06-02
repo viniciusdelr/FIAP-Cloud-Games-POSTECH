@@ -10,7 +10,6 @@ namespace JWT_Example.Controllers
     {
         [HttpGet]
         [Authorize]
-
         public IActionResult Get()
         {
             return Ok(new { value = "Seu Token é valido" });
