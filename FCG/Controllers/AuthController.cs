@@ -21,7 +21,7 @@ namespace FCG.Controllers
             _context = context;
         }
 
-        [HttpGet("login")]
+        [HttpPost("login")]
         public async Task<ActionResult> Login(LoginDto loginDto)
         {
 

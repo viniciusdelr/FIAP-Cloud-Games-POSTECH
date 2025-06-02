@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace FCG.Entities
+namespace FCG.DTOs
 {
-    public class VideoGames
+    public class VideoGamesDto
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
         public required string Title { get; set; } = string.Empty;
         public required string Developer { get; set; } = string.Empty;
         public required string Publisher { get; set; } = string.Empty;
@@ -14,8 +14,7 @@ namespace FCG.Entities
         [Precision(18, 2)]
         public required decimal Price { get; set; }
         [Precision(18, 2)]
-        public decimal DiscountPrice { get; set; }
+        //public decimal DiscountPrice { get; set; }
         public int DiscountPerc { get; set; }
-
     }
 }
