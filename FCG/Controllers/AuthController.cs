@@ -1,6 +1,5 @@
 ﻿using FCG.Data;
 using FCG.DTOs;
-using FCG.Model;
 using JWT_Example;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
