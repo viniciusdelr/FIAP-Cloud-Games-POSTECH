@@ -17,7 +17,7 @@ namespace FCG.Controllers
 
 
         [HttpPost("register")]
-        public async Task<ActionResult> Register(AccountDto dto)
+        public async Task<ActionResult> Register([FromBody] AccountDto dto)
         {
             if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
                 return BadRequest(new { mensagem = "E-mail já cadastrado." });

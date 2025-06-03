@@ -1,4 +1,5 @@
-﻿using JWT_Example;
+﻿using FCG.Entities;
+using JWT_Example;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -15,13 +16,15 @@ namespace FCG.Auth
             _jwtSettings = jwtSettings;
         }
 
-        public string GerarAuth()
+        public string GerarAuth(Users user)
         {
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, "testuser"),
+                new Claim(JwtRegisteredClaimNames.Sub, user.Username),
+                new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                new Claim(ClaimTypes.Role, user.Admin ? "Admin" : "User"),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-                };
+            };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

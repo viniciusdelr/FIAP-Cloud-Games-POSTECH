@@ -16,7 +16,7 @@ namespace FCG.Controllers
             _context = context;
         }
 
-        [HttpGet("VideoGames")]
+        [HttpGet("GetVideoGames")]
         [Authorize]
         public async Task<ActionResult> GetVideoGames()
         {
@@ -25,12 +25,49 @@ namespace FCG.Controllers
             return Ok(videoGames);
         }
 
-        [HttpPost("VideoGames")]
+        [HttpGet("GetByIdVideoGames/{id}")]
         [Authorize]
-        public async Task<ActionResult> PostVideoGames([FromBody]VideoGamesDto dto)
+        public async Task<ActionResult> GetVideoGames(int id)
+        {
+            var videoGame = await _context.VideoGames.FindAsync(id);
+
+            if (videoGame is null)
+                return NotFound(new { mensagem = "Jogo não encontrado." });
+
+            return Ok(videoGame);
+        }
+
+        [HttpPost("PostVideoGames")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult> PostVideoGames([FromBody]VideoGamesDto dtoVideoGame)
         {
 
-            var videoGames = new VideoGames
+            var videoGame = new VideoGames
+            {
+                Title = dtoVideoGame.Title,
+                Developer = dtoVideoGame.Developer,
+                Publisher = dtoVideoGame.Publisher,
+                Genre = dtoVideoGame.Genre,
+                InitialRelease = dtoVideoGame.InitialRelease,
+                Price = dtoVideoGame.Price,
+                DiscountPerc = dtoVideoGame.DiscountPerc,
+                DiscountPrice = dtoVideoGame.Price - (dtoVideoGame.Price * dtoVideoGame.DiscountPerc / 100)
+            };
+
+            _context.VideoGames.Add(videoGame);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { mensagem = "Jogo Cadastrado!" });
+        }
+
+        [HttpPost("PostListVideoGames")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult> PostListVideoGames([FromBody] List<VideoGamesDto> dtoListVideoGames)
+        {
+            if (dtoListVideoGames == null || !dtoListVideoGames.Any())
+                return BadRequest(new { mensagem = "Lista de jogos vazia." });
+
+            var videoGamesList = dtoListVideoGames.Select(dto => new VideoGames
             {
                 Title = dto.Title,
                 Developer = dto.Developer,
@@ -40,14 +77,54 @@ namespace FCG.Controllers
                 Price = dto.Price,
                 DiscountPerc = dto.DiscountPerc,
                 DiscountPrice = dto.Price - (dto.Price * dto.DiscountPerc / 100)
-            };
+            }).ToList();
 
-            _context.VideoGames.Add(videoGames);
+            _context.VideoGames.AddRange(videoGamesList);
             await _context.SaveChangesAsync();
 
-            return Ok(new { mensagem = "Jogo Cadastrado!" });
+            return Ok(new { mensagem = "Jogos cadastrados com sucesso!" });
         }
 
+        [HttpPut("PutVideoGames/{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult> PutVideoGames(int id, [FromBody] VideoGamesDto dto)
+        {
+            var UpdatedVideoGame = await _context.VideoGames.FindAsync(id);
+
+            if (UpdatedVideoGame is null)
+                return NotFound(new { mensagem = "Jogo não encontrado." });
+
+            UpdatedVideoGame.Title = dto.Title;
+            UpdatedVideoGame.Developer = dto.Developer;
+            UpdatedVideoGame.Publisher = dto.Publisher;
+            UpdatedVideoGame.Genre = dto.Genre;
+            UpdatedVideoGame.InitialRelease = dto.InitialRelease;
+            UpdatedVideoGame.Price = dto.Price;
+            UpdatedVideoGame.DiscountPerc = dto.DiscountPerc;
+            UpdatedVideoGame.DiscountPrice = dto.Price - (dto.Price * dto.DiscountPerc / 100);
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new { mensagem = "Jogo atualizado com sucesso.", UpdatedVideoGame });
+        }
+
+
+        [HttpDelete("DeleteVideoGames/{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult> DeleteVideoGame(int Id)
+        {
+
+            var dbHero = await _context.VideoGames.FindAsync(Id);
+
+            if (dbHero is null)
+                return NotFound(new { mensagem = "Jogo não encontrado." });
+
+            _context.VideoGames.Remove(dbHero);
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new { mensagem = "Jogo deletado com sucesso.", VideoGames = await _context.VideoGames.ToListAsync() });
+        }
 
 
     }

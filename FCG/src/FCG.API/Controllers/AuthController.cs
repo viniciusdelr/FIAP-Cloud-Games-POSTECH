@@ -20,7 +20,7 @@ namespace FCG.Controllers
             _context = context;
         }
 
-        [HttpPost("login")]
+        [HttpPost("Login")]
         public async Task<ActionResult> Login(LoginDto loginDto)
         {
 
@@ -36,7 +36,7 @@ namespace FCG.Controllers
                 return BadRequest(new { mensagem = "Senha incorreta." });
 
             var auth = new Auth.Auth(_jwtSettings);
-            var token = auth.GerarAuth();
+            var token = auth.GerarAuth(account);
 
             return Ok(new
             {
