@@ -1,4 +1,4 @@
-﻿using FCG.Entities;
+﻿using FCG.Domain.Entities;
 using JWT_Example;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;

@@ -1,4 +1,4 @@
-using FCG.Data;
+using FCG.Infrastructure.Data;
 using JWT_Example;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +7,7 @@ using System.Text;
 //using static System.Runtime.InteropServices.JavaScript.JSType;
 using FCG.Middlewares;
 using Serilog;
+using System;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -55,7 +56,7 @@ builder.Services.AddAuthentication(options =>
             context.Response.ContentType = "application/json";
             var result = System.Text.Json.JsonSerializer.Serialize(new
             {
-                mensagem = "Token inválido ou ausente."
+                mensagem = "Token invÃ¡lido ou ausente."
             });
             return context.Response.WriteAsync(result);
         },
@@ -66,7 +67,7 @@ builder.Services.AddAuthentication(options =>
             context.Response.ContentType = "application/json";
             var result = System.Text.Json.JsonSerializer.Serialize(new
             {
-                mensagem = "Você não possui permissão para esta ação. Contate um administrador."
+                mensagem = "VocÃª nÃ£o possui permissÃ£o para esta aÃ§Ã£o. Contate um administrador."
             });
             return context.Response.WriteAsync(result);
         }
@@ -111,6 +112,14 @@ builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+//builder.Services.AddDbContext<DataContext>(options =>
+//    options.UseSqlServer(
+//        builder.Configuration.GetConnectionString("DefaultConnection"),
+//        sqlOptions => sqlOptions.MigrationsAssembly("FCG.Infrastructure")
+//    )
+//);
+
 
 var app = builder.Build();
 

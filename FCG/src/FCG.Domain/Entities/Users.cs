@@ -1,4 +1,4 @@
-﻿namespace FCG.Entities
+﻿namespace FCG.Domain.Entities
 {
     public class Users
     {

@@ -1,9 +1,9 @@
-﻿using FCG.Data;
-using FCG.Entities;
+﻿using FCG.Infrastructure.Data;
+using FCG.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
-using FCG.DTOs;
+using FCG.Application.DTOs;
 using Microsoft.AspNetCore.Authorization;
 
 namespace FCG.Controllers
@@ -16,30 +16,9 @@ namespace FCG.Controllers
             _context = context;
         }
 
-        [HttpGet("GetVideoGames")]
-        [Authorize]
-        public async Task<ActionResult> GetVideoGames()
-        {
-            var videoGames = await _context.VideoGames.ToListAsync();
-
-            return Ok(videoGames);
-        }
-
-        [HttpGet("GetByIdVideoGames/{id}")]
-        [Authorize]
-        public async Task<ActionResult> GetVideoGames(int id)
-        {
-            var videoGame = await _context.VideoGames.FindAsync(id);
-
-            if (videoGame is null)
-                return NotFound(new { mensagem = "Jogo não encontrado." });
-
-            return Ok(videoGame);
-        }
-
         [HttpPost("PostVideoGames")]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult> PostVideoGames([FromBody]VideoGamesDto dtoVideoGame)
+        public async Task<ActionResult> PostVideoGames([FromBody] VideoGamesDto dtoVideoGame)
         {
 
             var videoGame = new VideoGames
@@ -85,6 +64,27 @@ namespace FCG.Controllers
             return Ok(new { mensagem = "Jogos cadastrados com sucesso!" });
         }
 
+        [HttpGet("GetVideoGames")]
+        [Authorize]
+        public async Task<ActionResult> GetVideoGames()
+        {
+            var videoGames = await _context.VideoGames.ToListAsync();
+
+            return Ok(videoGames);
+        }
+
+        [HttpGet("GetByIdVideoGames/{id}")]
+        [Authorize]
+        public async Task<ActionResult> GetVideoGames(int id)
+        {
+            var videoGame = await _context.VideoGames.FindAsync(id);
+
+            if (videoGame is null)
+                return NotFound(new { mensagem = "Jogo não encontrado." });
+
+            return Ok(videoGame);
+        }
+
         [HttpPut("PutVideoGames/{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult> PutVideoGames(int id, [FromBody] VideoGamesDto dto)
@@ -108,24 +108,21 @@ namespace FCG.Controllers
             return Ok(new { mensagem = "Jogo atualizado com sucesso.", UpdatedVideoGame });
         }
 
-
         [HttpDelete("DeleteVideoGames/{id}")]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult> DeleteVideoGame(int Id)
+        public async Task<ActionResult> DeleteVideoGame(int id)
         {
 
-            var dbHero = await _context.VideoGames.FindAsync(Id);
+            var videoGame = await _context.VideoGames.FindAsync(id);
 
-            if (dbHero is null)
+            if (videoGame is null)
                 return NotFound(new { mensagem = "Jogo não encontrado." });
 
-            _context.VideoGames.Remove(dbHero);
+            _context.VideoGames.Remove(videoGame);
 
             await _context.SaveChangesAsync();
 
             return Ok(new { mensagem = "Jogo deletado com sucesso.", VideoGames = await _context.VideoGames.ToListAsync() });
         }
-
-
     }
 }

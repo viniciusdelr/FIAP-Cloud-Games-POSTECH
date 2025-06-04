@@ -1,4 +1,4 @@
-﻿namespace FCG.DTOs
+﻿namespace FCG.Application.DTOs
 {
     public class LoginDto
     {

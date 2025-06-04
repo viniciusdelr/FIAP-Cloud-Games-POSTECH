@@ -5,7 +5,6 @@ C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\De
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\Debug\net8.0\FCG.API.csproj.CoreCompileInputs.cache
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\Debug\net8.0\FCG.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\Debug\net8.0\FCG.API.sourcelink.json
-C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\Debug\net8.0\FCG.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\bin\Debug\net8.0\appsettings.json
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\bin\Debug\net8.0\FCG.API.exe
@@ -176,6 +175,7 @@ C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\bin\De
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\bin\Debug\net8.0\FCG.Application.pdb
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\bin\Debug\net8.0\FCG.Infrastructure.pdb
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\bin\Debug\net8.0\FCG.Domain.pdb
+C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\Debug\net8.0\FCG.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API\obj\Debug\net8.0\staticwebassets\msbuild.FCG.API.Microsoft.AspNetCore.StaticWebAssets.props

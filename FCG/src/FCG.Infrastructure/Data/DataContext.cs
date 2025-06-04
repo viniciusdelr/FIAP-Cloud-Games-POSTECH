@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using FCG.Entities;
+using FCG.Domain.Entities;
 
-namespace FCG.Data
+namespace FCG.Infrastructure.Data
 {
     public class DataContext : DbContext
     {

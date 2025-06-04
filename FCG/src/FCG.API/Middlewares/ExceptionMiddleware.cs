@@ -8,7 +8,6 @@ namespace FCG.Middlewares
         private readonly RequestDelegate _next;
         private readonly ILogger<ExceptionMiddleware> _logger;
         private readonly IWebHostEnvironment _env;
-
         public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger, IWebHostEnvironment env)
         {
             _next = next;

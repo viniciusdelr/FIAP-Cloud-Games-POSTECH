@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace FCG.DTOs
+namespace FCG.Application.DTOs
 {
     public class VideoGamesDto
     {

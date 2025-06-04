@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FCG", "FCG.csproj", "{F6B288FE-B67E-4E7F-B1D4-79E862772692}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1E7C6B83-F31C-4336-A6B7-EC71B7FE4560}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FCG.Tests", "tests\FCG.Tests\FCG.Tests.csproj", "{32EB572C-CB72-4C37-8B6B-D0034AF28D8A}"
@@ -19,16 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FCG.Infrastructure", "src\F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FCG.API", "src\FCG.API\FCG.API.csproj", "{2C6A93BA-C2C2-41FC-A2CD-378D8602F2CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A3B86C7-C38D-4B4F-81FC-B6A055EA0644}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig.txt = .editorconfig.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F6B288FE-B67E-4E7F-B1D4-79E862772692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6B288FE-B67E-4E7F-B1D4-79E862772692}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6B288FE-B67E-4E7F-B1D4-79E862772692}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6B288FE-B67E-4E7F-B1D4-79E862772692}.Release|Any CPU.Build.0 = Release|Any CPU
 		{32EB572C-CB72-4C37-8B6B-D0034AF28D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{32EB572C-CB72-4C37-8B6B-D0034AF28D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32EB572C-CB72-4C37-8B6B-D0034AF28D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU

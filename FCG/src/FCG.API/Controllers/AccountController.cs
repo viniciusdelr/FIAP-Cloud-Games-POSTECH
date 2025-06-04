@@ -1,9 +1,9 @@
-﻿using FCG.Data;
-using FCG.Entities;
+﻿using FCG.Infrastructure.Data;
+using FCG.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
-using FCG.DTOs;
+using FCG.Application.DTOs;
 
 namespace FCG.Controllers
 {
@@ -14,7 +14,6 @@ namespace FCG.Controllers
         {
             _context = context;
         }
-
 
         [HttpPost("register")]
         public async Task<ActionResult> Register([FromBody] AccountDto dto)

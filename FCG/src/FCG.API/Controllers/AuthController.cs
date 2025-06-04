@@ -1,5 +1,5 @@
-﻿using FCG.Data;
-using FCG.DTOs;
+﻿using FCG.Infrastructure.Data;
+using FCG.Application.DTOs;
 using JWT_Example;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -23,16 +23,15 @@ namespace FCG.Controllers
         [HttpPost("Login")]
         public async Task<ActionResult> Login(LoginDto loginDto)
         {
-
             var account = await _context.Users
                 .FirstOrDefaultAsync(u => u.Username == loginDto.Username);
 
             if (account == null)
                 return BadRequest(new { mensagem = "Usuário não encontrado." });
 
-            bool isSenhaCorreta = BCrypt.Net.BCrypt.Verify(loginDto.Password, account.Password);
+            bool IncorrectPass = BCrypt.Net.BCrypt.Verify(loginDto.Password, account.Password);
 
-            if (!isSenhaCorreta)
+            if (!IncorrectPass)
                 return BadRequest(new { mensagem = "Senha incorreta." });
 
             var auth = new Auth.Auth(_jwtSettings);
@@ -43,7 +42,6 @@ namespace FCG.Controllers
                 mensagem = "Login bem-sucedido",
                 token = token
             });
-            
         }
     }
 }
