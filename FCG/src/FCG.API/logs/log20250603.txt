@@ -1,0 +1,72 @@
+2025-06-03 00:15:47.702 -03:00 [INF] User profile is available. Using 'C:\Users\Vinishow\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 00:15:47.848 -03:00 [INF] Now listening on: https://localhost:7072
+2025-06-03 00:15:47.850 -03:00 [INF] Now listening on: http://localhost:5065
+2025-06-03 00:15:47.853 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 00:15:47.854 -03:00 [INF] Hosting environment: Development
+2025-06-03 00:15:47.855 -03:00 [INF] Content root path: C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API
+2025-06-03 00:15:48.680 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-03 00:15:48.887 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 208.5659ms
+2025-06-03 00:15:48.909 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 00:15:48.914 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-03 00:15:48.922 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.0856ms
+2025-06-03 00:15:49.045 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 131.3678ms
+2025-06-03 00:15:49.084 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-03 00:15:49.195 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.1022ms
+2025-06-03 00:16:26.893 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7072/register?Username=testeeeeeeeee&FirstName=oi&LastName=teste&Email=teste%40ddd.com&Password=vini%402025 - null 0
+2025-06-03 00:16:26.906 -03:00 [INF] Requisição iniciada: POST /register de IP ::1
+2025-06-03 00:16:26.966 -03:00 [INF] Executing endpoint 'FCG.Controllers.AccountController.Register (FCG.API)'
+2025-06-03 00:16:26.986 -03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(FCG.DTOs.AccountDto) on controller FCG.Controllers.AccountController (FCG.API).
+2025-06-03 00:16:28.105 -03:00 [INF] Executed DbCommand (38ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-03 00:16:28.133 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__dto_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__dto_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-06-03 00:16:28.593 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Admin], [Email], [FirstName], [LastName], [Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-06-03 00:16:28.623 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-03 00:16:28.657 -03:00 [INF] Executed action FCG.Controllers.AccountController.Register (FCG.API) in 1666.7248ms
+2025-06-03 00:16:28.658 -03:00 [INF] Executed endpoint 'FCG.Controllers.AccountController.Register (FCG.API)'
+2025-06-03 00:16:28.660 -03:00 [INF] Requisição finalizada com status 200
+2025-06-03 00:16:28.666 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7072/register?Username=testeeeeeeeee&FirstName=oi&LastName=teste&Email=teste%40ddd.com&Password=vini%402025 - 200 null application/json; charset=utf-8 1772.8933ms
+2025-06-03 00:18:18.195 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7072/Auth/login - application/json 60
+2025-06-03 00:18:18.199 -03:00 [INF] Requisição iniciada: POST /Auth/login de IP ::1
+2025-06-03 00:18:18.202 -03:00 [INF] Executing endpoint 'FCG.Controllers.AuthController.Login (FCG.API)'
+2025-06-03 00:18:18.210 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(FCG.DTOs.LoginDto) on controller FCG.Controllers.AuthController (FCG.API).
+2025-06-03 00:18:18.285 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__loginDto_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Admin], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__loginDto_Username_0
+2025-06-03 00:18:18.638 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-03 00:18:18.641 -03:00 [INF] Executed action FCG.Controllers.AuthController.Login (FCG.API) in 430.1962ms
+2025-06-03 00:18:18.642 -03:00 [INF] Executed endpoint 'FCG.Controllers.AuthController.Login (FCG.API)'
+2025-06-03 00:18:18.643 -03:00 [INF] Requisição finalizada com status 200
+2025-06-03 00:18:18.644 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7072/Auth/login - 200 null application/json; charset=utf-8 448.8107ms
+2025-06-03 00:20:09.076 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7072/VideoGames - application/json 174
+2025-06-03 00:20:09.078 -03:00 [INF] Requisição iniciada: POST /VideoGames de IP ::1
+2025-06-03 00:20:09.085 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-03 00:20:09.089 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-03 00:20:09.090 -03:00 [INF] Requisição finalizada com status 401
+2025-06-03 00:20:09.091 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7072/VideoGames - 401 0 null 14.7679ms
+2025-06-03 00:20:13.521 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7072/VideoGames - application/json 174
+2025-06-03 00:20:13.523 -03:00 [INF] Requisição iniciada: POST /VideoGames de IP ::1
+2025-06-03 00:20:13.526 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-03 00:20:13.528 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-03 00:20:13.529 -03:00 [INF] Requisição finalizada com status 401
+2025-06-03 00:20:13.530 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7072/VideoGames - 401 0 null 8.7621ms
