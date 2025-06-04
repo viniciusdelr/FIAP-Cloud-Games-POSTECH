@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DAD1F6-C7E3-48A8-87B3-567D14CA5D03}|src\\FCG.Infrastructure\\FCG.Infrastructure.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\src\\fcg.infrastructure\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DAD1F6-C7E3-48A8-87B3-567D14CA5D03}|src\\FCG.Infrastructure\\FCG.Infrastructure.csproj|solutionrelative:src\\fcg.infrastructure\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6A93BA-C2C2-41FC-A2CD-378D8602F2CD}|src\\FCG.API\\FCG.API.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\src\\fcg.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6A93BA-C2C2-41FC-A2CD-378D8602F2CD}|src\\FCG.API\\FCG.API.csproj|solutionrelative:src\\fcg.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC140B0-EA19-4352-9D7C-32690CCDD0A4}|src\\FCG.Application\\FCG.Application.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\src\\fcg.application\\dtos\\videogamesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC140B0-EA19-4352-9D7C-32690CCDD0A4}|src\\FCG.Application\\FCG.Application.csproj|solutionrelative:src\\fcg.application\\dtos\\videogamesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC140B0-EA19-4352-9D7C-32690CCDD0A4}|src\\FCG.Application\\FCG.Application.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\src\\fcg.application\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC140B0-EA19-4352-9D7C-32690CCDD0A4}|src\\FCG.Application\\FCG.Application.csproj|solutionrelative:src\\fcg.application\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC140B0-EA19-4352-9D7C-32690CCDD0A4}|src\\FCG.Application\\FCG.Application.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\src\\fcg.application\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC140B0-EA19-4352-9D7C-32690CCDD0A4}|src\\FCG.Application\\FCG.Application.csproj|solutionrelative:src\\fcg.application\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7627FEC-4CB9-4D06-91C2-C720FA4A23FC}|src\\FCG.Domain\\FCG.Domain.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\src\\fcg.domain\\entities\\videogames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7627FEC-4CB9-4D06-91C2-C720FA4A23FC}|src\\FCG.Domain\\FCG.Domain.csproj|solutionrelative:src\\fcg.domain\\entities\\videogames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7627FEC-4CB9-4D06-91C2-C720FA4A23FC}|src\\FCG.Domain\\FCG.Domain.csproj|c:\\vinicius_dev\\fiap-cloud-games\\fiap-cloud-games-postech\\fcg\\src\\fcg.domain\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7627FEC-4CB9-4D06-91C2-C720FA4A23FC}|src\\FCG.Domain\\FCG.Domain.csproj|solutionrelative:src\\fcg.domain\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.API\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\FCG.API\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.API\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "src\\FCG.API\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwC8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:55:28.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Infrastructure\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "src\\FCG.Infrastructure\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Infrastructure\\Data\\DataContext.cs",
+              "RelativeToolTip": "src\\FCG.Infrastructure\\Data\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:54:47.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VideoGamesDto.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Application\\DTOs\\VideoGamesDto.cs",
+              "RelativeDocumentMoniker": "src\\FCG.Application\\DTOs\\VideoGamesDto.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Application\\DTOs\\VideoGamesDto.cs",
+              "RelativeToolTip": "src\\FCG.Application\\DTOs\\VideoGamesDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:54:19.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Application\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "src\\FCG.Application\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Application\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "src\\FCG.Application\\DTOs\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:54:17.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountDto.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Application\\DTOs\\AccountDto.cs",
+              "RelativeDocumentMoniker": "src\\FCG.Application\\DTOs\\AccountDto.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Application\\DTOs\\AccountDto.cs",
+              "RelativeToolTip": "src\\FCG.Application\\DTOs\\AccountDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:54:11.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VideoGames.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Domain\\Entities\\VideoGames.cs",
+              "RelativeDocumentMoniker": "src\\FCG.Domain\\Entities\\VideoGames.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Domain\\Entities\\VideoGames.cs",
+              "RelativeToolTip": "src\\FCG.Domain\\Entities\\VideoGames.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:54:09.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Domain\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "src\\FCG.Domain\\Entities\\Users.cs",
+              "ToolTip": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\src\\FCG.Domain\\Entities\\Users.cs",
+              "RelativeToolTip": "src\\FCG.Domain\\Entities\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T02:54:07.269Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
