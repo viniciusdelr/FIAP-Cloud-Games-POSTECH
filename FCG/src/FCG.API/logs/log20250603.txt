@@ -474,3 +474,17 @@ FROM [VideoGames] AS [v]
 2025-06-03 21:27:40.723 -03:00 [INF] Executed endpoint 'FCG.Controllers.VideoGamesController.DeleteVideoGame (FCG.API)'
 2025-06-03 21:27:40.724 -03:00 [INF] Requisição finalizada com status 200
 2025-06-03 21:27:40.725 -03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7072/DeleteVideoGames/1 - 200 null application/json; charset=utf-8 1331.5249ms
+2025-06-03 23:03:36.210 -03:00 [INF] User profile is available. Using 'C:\Users\Vinishow\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 23:03:36.473 -03:00 [INF] Now listening on: https://localhost:7072
+2025-06-03 23:03:36.475 -03:00 [INF] Now listening on: http://localhost:5065
+2025-06-03 23:03:36.478 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 23:03:36.479 -03:00 [INF] Hosting environment: Development
+2025-06-03 23:03:36.480 -03:00 [INF] Content root path: C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\src\FCG.API
+2025-06-03 23:03:37.558 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - null null
+2025-06-03 23:03:37.799 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - 200 null text/html;charset=utf-8 254.8431ms
+2025-06-03 23:03:37.817 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 23:03:37.821 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7072/_vs/browserLink - null null
+2025-06-03 23:03:37.833 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 15.8582ms
+2025-06-03 23:03:38.001 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 180.5652ms
+2025-06-03 23:03:38.039 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - null null
+2025-06-03 23:03:38.214 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 175.2473ms

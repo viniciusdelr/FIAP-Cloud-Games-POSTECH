@@ -272,3 +272,4 @@ C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\tests\FCG.Tests\ob
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\tests\FCG.Tests\obj\Debug\net8.0\FCG.Tests.pdb
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\tests\FCG.Tests\obj\Debug\net8.0\FCG.Tests.genruntimeconfig.cache
 C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\tests\FCG.Tests\obj\Debug\net8.0\ref\FCG.Tests.dll
+C:\Vinicius_Dev\FIAP-Cloud-Games\FIAP-Cloud-Games-POSTECH\FCG\tests\FCG.Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3W4nAuULgpM=",
+  "dgSpecHash": "Zj8wk85LgJs=",
   "success": true,
   "projectFilePath": "C:\\Vinicius_Dev\\FIAP-Cloud-Games\\FIAP-Cloud-Games-POSTECH\\FCG\\tests\\FCG.Tests\\FCG.Tests.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\Vinishow\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.5\\microsoft.entityframeworkcore.abstractions.9.0.5.nupkg.sha512",
     "C:\\Users\\Vinishow\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.5\\microsoft.entityframeworkcore.analyzers.9.0.5.nupkg.sha512",
     "C:\\Users\\Vinishow\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.5\\microsoft.entityframeworkcore.design.9.0.5.nupkg.sha512",
+    "C:\\Users\\Vinishow\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\9.0.5\\microsoft.entityframeworkcore.inmemory.9.0.5.nupkg.sha512",
     "C:\\Users\\Vinishow\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.5\\microsoft.entityframeworkcore.relational.9.0.5.nupkg.sha512",
     "C:\\Users\\Vinishow\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\9.0.5\\microsoft.entityframeworkcore.sqlserver.9.0.5.nupkg.sha512",
     "C:\\Users\\Vinishow\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.5\\microsoft.entityframeworkcore.tools.9.0.5.nupkg.sha512",
