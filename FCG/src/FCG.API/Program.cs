@@ -120,6 +120,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 //    )
 //);
 
+builder.WebHost.UseUrls("http://0.0.0.0:80");
 
 var app = builder.Build();
 
