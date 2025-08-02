@@ -21,7 +21,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build da imagem Docker
-        run: docker build -t viniciusdelr/fcg-api:latest .
-
-      - name: Push da imagem para o Docker Hub
-        run: docker push viniciusdelr/fcg-api:latest
+        uses: docker/build-push-action@v5
+        with:
+          context: ./src/fcg-api
+          file: ./src/fcg-api/Dockerfile
+          push: true
+          tags: viniciusdelr/fcg-api:latest
