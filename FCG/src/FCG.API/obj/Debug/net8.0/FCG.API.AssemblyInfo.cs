@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("d08367c1-769e-451c-b6cf-37237308b96b")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FCG.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbf1b18da92ce104e5b06526dc3b0a500d3b2fd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db94ca4717a2c6702e83d2e870c9dc177d455382")]
 [assembly: System.Reflection.AssemblyProductAttribute("FCG.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCG.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

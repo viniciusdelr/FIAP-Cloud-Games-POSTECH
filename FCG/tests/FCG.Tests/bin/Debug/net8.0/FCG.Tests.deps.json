@@ -1107,6 +1107,7 @@
           }
         }
       },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.20.1": {},
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2306,6 +2307,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.5",
           "Microsoft.IdentityModel.Logging": "8.11.0",
           "Microsoft.IdentityModel.Tokens": "8.11.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.20.1",
           "Serilog": "4.3.0",
           "Serilog.AspNetCore": "9.0.0",
           "Serilog.Sinks.Console": "6.0.0",
@@ -2787,6 +2789,13 @@
       "sha512": "sha512-9ivcl/7SGRmOT0YYrHQGohWiT5YCpkmy/UEzldfVisLm6QxbLaK3FAJqZXI34rnRLmqqDCeMQxKINwmKwAPiDw==",
       "path": "microsoft.testplatform.testhost/17.8.0",
       "hashPath": "microsoft.testplatform.testhost.17.8.0.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.20.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H4bIRdEOuyWBotgdPA5oCjJmUekWrtU5lOKnMAVaSNduZXHnqFZECsYbkm4vIOE4aeIO8TEYqfsZaJus1KknLQ==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.20.1",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.20.1.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
