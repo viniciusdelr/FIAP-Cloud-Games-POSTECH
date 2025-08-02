@@ -1,13 +1,14 @@
-name: Build and Push Docker image
+name: Build and Push Docker Image
 
 on:
-  workflow_dispatch:
-  push:
+  workflow_dispatch:   
+  push:                
     branches:
-      - main  # ou a branch que desejar
+      - main
 
 jobs:
   build-and-push:
+    name: Build and Push Docker Image
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +21,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build da imagem Docker
+      - name: Build e push da imagem Docker
         uses: docker/build-push-action@v5
         with:
           context: ./src/fcg-api
