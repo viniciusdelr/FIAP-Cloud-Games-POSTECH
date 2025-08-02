@@ -24,7 +24,7 @@ jobs:
       - name: Build e push da imagem Docker
         uses: docker/build-push-action@v5
         with:
-          context: ./src/fcg-api
-          file: ./src/fcg-api/Dockerfile
+          context: ./FCG/src/FCG-API
+          file: ./FCG/src/FCG-API/Dockerfile
           push: true
           tags: viniciusdelr/fcg-api:latest
