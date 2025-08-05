@@ -16,19 +16,19 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
 # Instala o agente New Relic
-RUN apt-get update && apt-get install -y unzip curl && \
-  curl -L https://download.newrelic.com/dot_net_agent/latest_release/newrelic-netcore20-agent_linux_x64.tar.gz \
-  | tar -xz -C /usr/local/newrelic-dotnet && \
-    rm newrelic-dotnet-agent.zip
+RUN apt-get update && apt-get install -y curl && \
+    mkdir -p /usr/local/newrelic-dotnet && \
+    curl -L https://download.newrelic.com/dot_net_agent/latest_release/newrelic-netcore20-agent_linux_x64.tar.gz \
+    | tar -xz -C /usr/local/newrelic-dotnet
 
-# Variáveis de ambiente
+# Variaveis de ambiente
 ENV CORECLR_ENABLE_PROFILING=1
 ENV CORECLR_PROFILER="{36032161-FFC0-4B61-B559-F6C5D41BAE5A}"
 ENV CORECLR_PROFILER_PATH=/usr/local/newrelic-dotnet/libNewRelicProfiler.so
 ENV NEW_RELIC_HOME=/usr/local/newrelic-dotnet
 ENV DOTNET_STARTUP_HOOKS=/usr/local/newrelic-dotnet/NewRelic.StartupHook.dll
 
-# ARG + ENV para a licença funcionar via build-args
+# ARG + ENV para a licenÃ§a funcionar via build-args
 ARG NEW_RELIC_LICENSE_KEY
 ENV NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY
 
