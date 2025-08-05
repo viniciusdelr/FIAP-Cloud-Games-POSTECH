@@ -15,20 +15,21 @@ RUN dotnet publish src/FCG.API/FCG.API.csproj -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
-# Instala o agente New Relic
-RUN apt-get update && apt-get install -y curl && \
-    mkdir -p /usr/local/newrelic-dotnet && \
-    curl -L https://download.newrelic.com/dot_net_agent/latest_release/newrelic-netcore20-agent_linux_x64.tar.gz \
-    | tar -xz -C /usr/local/newrelic-dotnet
+# Instala dependências do agente New Relic
+RUN apt-get update && apt-get install -y wget ca-certificates gnupg \
+&& echo 'deb [signed-by=/usr/share/keyrings/newrelic-apt.gpg] http://apt.newrelic.com/debian/ newrelic non-free' | tee /etc/apt/sources.list.d/newrelic.list \
+&& wget -O- https://download.newrelic.com/NEWRELIC_APT_2DAD550E.public | gpg --import --batch --no-default-keyring --keyring /usr/share/keyrings/newrelic-apt.gpg \
+&& apt-get update \
+&& apt-get install -y newrelic-dotnet-agent \
+&& rm -rf /var/lib/apt/lists/*
 
-# Variaveis de ambiente
-ENV CORECLR_ENABLE_PROFILING=1
-ENV CORECLR_PROFILER="{36032161-FFC0-4B61-B559-F6C5D41BAE5A}"
-ENV CORECLR_PROFILER_PATH=/usr/local/newrelic-dotnet/libNewRelicProfiler.so
-ENV NEW_RELIC_HOME=/usr/local/newrelic-dotnet
-ENV DOTNET_STARTUP_HOOKS=/usr/local/newrelic-dotnet/NewRelic.StartupHook.dll
+# Configuração de ambiente do New Relic
+ENV CORECLR_ENABLE_PROFILING=1 \
+CORECLR_PROFILER={36032161-FFC0-4B61-B559-F6C5D41BAE5A} \
+CORECLR_NEWRELIC_HOME=/usr/local/newrelic-dotnet-agent \
+CORECLR_PROFILER_PATH=/usr/local/newrelic-dotnet-agent/libNewRelicProfiler.so
 
-# ARG + ENV para a licença funcionar via build-args
+# ARG + ENV para chave da licença via build
 ARG NEW_RELIC_LICENSE_KEY
 ENV NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY
 
