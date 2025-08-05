@@ -11,10 +11,6 @@ RUN dotnet restore FCG.sln
 # Publica
 RUN dotnet publish src/FCG.API/FCG.API.csproj -c Release -o /app/publish
 
-# step 2: runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
-WORKDIR /app
-
 # Instala o agente New Relic
 RUN apt-get update && apt-get install -y unzip curl && \
     curl -o newrelic-dotnet-agent.zip https://download.newrelic.com/dot_net_agent/latest_release/NewRelicDotNetAgent_x64.zip && \
@@ -29,6 +25,10 @@ ENV NEW_RELIC_HOME=/usr/local/newrelic-dotnet
 ARG NEW_RELIC_LICENSE_KEY
 ENV NEW_RELIC_LICENSE_KEY=${NEW_RELIC_LICENSE_KEY}
 ENV NEW_RELIC_APP_NAME=FCGAPI-FIAP
+
+# step 2: runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+WORKDIR /app
 
 COPY --from=build /app/publish .
 
