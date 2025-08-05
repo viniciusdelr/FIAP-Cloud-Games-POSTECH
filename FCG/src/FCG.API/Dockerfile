@@ -11,20 +11,23 @@ RUN dotnet restore FCG.sln
 # Publica
 RUN dotnet publish src/FCG.API/FCG.API.csproj -c Release -o /app/publish
 
-# Instala o agente New Relic
-RUN apt-get update && apt-get install -y unzip curl && \
-    curl -o newrelic-dotnet-agent.zip https://download.newrelic.com/dot_net_agent/latest_release/NewRelicDotNetAgent_x64.zip && \
-    unzip newrelic-dotnet-agent.zip -d /usr/local/newrelic-dotnet && \
-    rm newrelic-dotnet-agent.zip
+# Install the agent
+RUN apt-get update && apt-get install -y wget ca-certificates gnupg \
+&& echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' | tee /etc/apt/sources.list.d/newrelic.list \
+&& wget https://download.newrelic.com/548C16BF.gpg \
+&& apt-key add 548C16BF.gpg \
+&& apt-get update \
+&& apt-get install -y 'newrelic-dotnet-agent' \
+&& rm -rf /var/lib/apt/lists/*
 
-# Define variaveis de ambiente para New Relic
-ENV CORECLR_ENABLE_PROFILING=1
-ENV CORECLR_PROFILER="{36032161-FFC0-4B61-B559-F6C5D41BAE5A}"
-ENV CORECLR_PROFILER_PATH=/usr/local/newrelic-dotnet/NewRelic.Profiler.dll
-ENV NEW_RELIC_HOME=/usr/local/newrelic-dotnet
-ARG NEW_RELIC_LICENSE_KEY
-ENV NEW_RELIC_LICENSE_KEY=${NEW_RELIC_LICENSE_KEY}
-ENV NEW_RELIC_APP_NAME=FCGAPI-FIAP
+# Enable the agent
+ENV CORECLR_ENABLE_PROFILING=1 \
+CORECLR_PROFILER={36032161-FFC0-4B61-B559-F6C5D41BAE5A} \
+CORECLR_NEWRELIC_HOME=/usr/local/newrelic-dotnet-agent \
+CORECLR_PROFILER_PATH=/usr/local/newrelic-dotnet-agent/libNewRelicProfiler.so \
+NEW_RELIC_LICENSE_KEY=ea2f02dd6aa53332e1a28e891fa5ab86FFFFNRAL \
+NEW_RELIC_APP_NAME="FCGAPI-FIAP"
+
 
 # step 2: runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
