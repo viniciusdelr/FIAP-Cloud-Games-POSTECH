@@ -108,21 +108,21 @@ namespace FCG.Controllers
             return Ok(new { mensagem = "Jogo atualizado com sucesso.", UpdatedVideoGame });
         }
 
-        //[HttpDelete("DeleteVideoGames/{id}")]
-        //[Authorize(Roles = "Admin")]
-        //public async Task<ActionResult> DeleteVideoGame(int id)
-        //{
+        [HttpDelete("DeleteVideoGames/{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult> DeleteVideoGame(int id)
+        {
 
-        //    var videoGame = await _context.VideoGames.FindAsync(id);
+            var videoGame = await _context.VideoGames.FindAsync(id);
 
-        //    if (videoGame is null)
-        //        return NotFound(new { mensagem = "Jogo não encontrado." });
+            if (videoGame is null)
+                return NotFound(new { mensagem = "Jogo não encontrado." });
 
-        //    _context.VideoGames.Remove(videoGame);
+            _context.VideoGames.Remove(videoGame);
 
-        //    await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
-        //    return Ok(new { mensagem = "Jogo deletado com sucesso.", VideoGames = await _context.VideoGames.ToListAsync() });
-        //}
+            return Ok(new { mensagem = "Jogo deletado com sucesso.", VideoGames = await _context.VideoGames.ToListAsync() });
+        }
     }
 }
