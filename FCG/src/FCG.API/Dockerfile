@@ -17,14 +17,14 @@ WORKDIR /app
 
 # Instala o agente New Relic
 RUN apt-get update && apt-get install -y unzip curl && \
-    curl -o newrelic-dotnet-agent.zip https://download.newrelic.com/dot_net_agent/latest_release/NewRelicDotNetAgent_x64.zip && \
-    unzip newrelic-dotnet-agent.zip -d /usr/local/newrelic-dotnet && \
+  curl -L https://download.newrelic.com/dot_net_agent/latest_release/newrelic-netcore20-agent_linux_x64.tar.gz \
+  | tar -xz -C /usr/local/newrelic-dotnet && \
     rm newrelic-dotnet-agent.zip
 
 # Variáveis de ambiente
 ENV CORECLR_ENABLE_PROFILING=1
 ENV CORECLR_PROFILER="{36032161-FFC0-4B61-B559-F6C5D41BAE5A}"
-ENV CORECLR_PROFILER_PATH=/usr/local/newrelic-dotnet/NewRelic.Profiler.dll
+ENV CORECLR_PROFILER_PATH=/usr/local/newrelic-dotnet/libNewRelicProfiler.so
 ENV NEW_RELIC_HOME=/usr/local/newrelic-dotnet
 ENV DOTNET_STARTUP_HOOKS=/usr/local/newrelic-dotnet/NewRelic.StartupHook.dll
 
