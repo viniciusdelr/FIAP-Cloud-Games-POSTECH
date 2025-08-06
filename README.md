@@ -92,4 +92,35 @@ dotnet run
 https://localhost:{porta}/swagger
 ```
 
+##  CI/CD com GitHub Actions
+
+Pipelines automatizadas com GitHub Actions:
+
+- **CI:** build e testes a cada push
+- **CD:** deploy automático na Azure
+
+Arquivos localizados em `.github/workflows/`
+
+##  Docker
+
+A aplicação está containerizada para garantir compatibilidade entre ambientes.
+
+### Build e execução:
+```bash
+docker build -t fiap-cloud-games .
+docker run -d -p 8080:80 fiap-cloud-games
+```
+
+Acesse via `http://localhost:8080/swagger`
+
+## ☁️ Deploy em Cloud (Azure)
+
+Deploy contínuo via GitHub Actions para o Azure App Service.
+
+🔗 Exemplo: [https://fcgapi-fiap-gvascycwh5dmfeex.brazilsouth-01.azurewebsites.net/swagger/index.html]
+
+## 📊 Monitoramento
+
+Monitoramento via **New Relic**, com agente configurado diretamente no Dockerfile.
+
 
